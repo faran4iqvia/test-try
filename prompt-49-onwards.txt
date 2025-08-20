@@ -1,8 +1,8 @@
-I have the Quranic tafsir JSON in two languages:
+I have the Quranic tafsir JSON in Urdu language:
 
 In Urdu: ur-tafsir-bayan-ul-quran by Dr Israr Ahmad
-In English: en-tafisr-ibn-kathir By Ibn e Kathir.
-Both of these tafsir have JSON for each surah of the Quran for example:
+
+This tafsir has JSON for each surah of the Quran for example:
 1.json for 1st Surah, surah Fatiha
 2.json for 2nd Surah, surah Baqarah etc.
 
@@ -11,8 +11,8 @@ Act as an islamic scholar, who has a pure Athari aqeeda, you follow Quran and Su
 
 I want you to make a summary of the Surah (ayah by ayah) in English language using:
 1. ur-tafsir-bayan-ul-quran by Dr Israr Ahmad - Urdu Tafir
-2. en-tafisr-ibn-kathir By Ibn e Kathir - English Tafsir
-These tafisr JSON has this structure:
+
+This tafisr JSON has this structure:
 {
   "ayahs": [
     {
@@ -26,11 +26,13 @@ These tafisr JSON has this structure:
   ]
 }  
 
-I want you to give me the summary of each aayah using these 2 tafsir. The final output will be stored in summary folder as 1.json, 2.json etc.
+I want you to give me the summary of each aayah using this urdu source of tafsir. The final output will be stored in summary folder as 1.json, 2.json etc. You should give summary in English language.
+
 I want you to analyze every ayah for the Surah in:
 1. ur-tafsir-bayan-ul-quran by Dr Israr Ahmad - Urdu Tafir
-2. en-tafisr-ibn-kathir By Ibn e Kathir - English Tafsir
-And then generated a sumarised info (it should be minimum of 2 paragraphs and maximum of 6 paragraphs - you can adjust details based on your analysis) about that aayah in the same format:
+And then generated a sumarised info (it should be minimum of 2 paragraphs and maximum of 6 paragraphs - you can adjust details based on your analysis) about that aayah. 
+
+The summary JSON should be in this format:
 {
   "ayahs": [
     {
@@ -45,6 +47,7 @@ And then generated a sumarised info (it should be minimum of 2 paragraphs and ma
 }  
 
 Based on above instructions, use the same object structure for summary for each aayah, dont add new field like summary, commentary etc. Keep this format only:
+example:
 {
   "ayahs": [
     {
@@ -58,9 +61,10 @@ Based on above instructions, use the same object structure for summary for each 
   ]
 } 
 
-Also, while genearting summary text, dont mention that this is according to ibn e Kathir or this is according to Dr Israr. Dont also mention things like according to Athari aqeeda this is this os the understanding etc. I want to keep this summary free from any names. I want it as pure summary using the available text.
+Also, while genearting summary text, dont mention that this is according to Dr Israr. Dont also mention things like according to Athari aqeeda this is this os the understanding etc. I want to keep this summary free from any names and labels. I want it as pure summary using the available text.
 Please make sure that when you generate summary, you read the "ayah" and its "text" from the source JSON object. When you go line by line, you might misread some other aayah. I dont wanna make mistakes while generating the summary.
-We want to generate as many Aayah as possible. Please read source json in urdu and english carefully and make better summary.
+We want to generate as many Aayah as possible. Please read source json in urdu carefully and make better summary JSON in English.
+Make sure you verify that that the summary JSON has the same number of aayah as the source tafsir JSON.
 
 
 can you generate the summary JSON for Surah 51. Make 51.json in the summary folder and generate summary in this format:
