@@ -67,7 +67,7 @@ We want to generate as many Aayah as possible. Please read source json in urdu c
 Make sure you verify that that the summary JSON has the same number of aayah as the source tafsir JSON.
 
 
-can you generate the summary JSON for Surah 51. Make 51.json in the summary folder and generate summary in this format:
+can you generate the summary JSON for Surah 56, Summary should be minimum of 2 paragraphs and maximum of 6 paragraphs. Make 56.json in the summary folder and generate summary in this format:
 
 {
   "ayahs": [
