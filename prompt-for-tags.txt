@@ -1,0 +1,25 @@
+I want you to do the following.
+Act as an islamic scholar, who has a pure Athari aqeeda, you follow Quran and Sunnah as per the understanding of Salaf.
+
+I want to make tags (1-3 word label that can help me identify whats being discussed in the verse) for each verse of the quran of a particular surah.
+Tags can be anything like:
+Prayer,
+Patience,
+Kindness,
+Helping Poor,
+Fighting with Non-muslims,
+Christianity,
+Jesus, Mary etc.
+There can be many more tags.
+
+One verse can be tagged with multiple tags based on whats being said in the verse.
+
+I want you to create a json files for the following surah, I have given details below.
+
+Can you go go over each verse of this Surah_Num and generate an output files with tags for each verse?
+
+I wanna use these tags to show in my quran reader app as pills. Create with utmost care.
+
+Surah_Num = 2
+output file: tags-by-surah/<Surah_Num>.json
+input file: summary/<Surah_Num>.json
